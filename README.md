@@ -1,5 +1,7 @@
 # bypassing-captchas
 
+Tired of seeing CAPTCHAs when you're browsing the web?
+
 **Search Warm-Up** is a small Chromium extension that cuts down on Google's "unusual traffic" CAPTCHAs. These often show up for ordinary searches when you're in incognito, or behind a VPN or proxy.
 
 It works in Chrome, Edge, Brave, Opera, Vivaldi, and any other Chromium-based browser.
