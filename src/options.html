@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Search Warm-Up Settings</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 520px; margin: 24px auto; padding: 0 16px; }
+    label { display: block; margin-top: 16px; font-weight: 600; }
+    .hint { font-weight: normal; font-size: 13px; color: #666; }
+    textarea { width: 100%; height: 160px; font-size: 14px; box-sizing: border-box; }
+    input[type="number"] { width: 90px; }
+    .row { display: flex; gap: 12px; align-items: center; margin-top: 4px; }
+    button { margin-top: 20px; padding: 6px 14px; font-size: 14px; }
+    #status { margin-left: 10px; color: #188038; }
+  </style>
+</head>
+<body>
+  <h1>Search Warm-Up Settings</h1>
+
+  <label for="google-domain">Google site <span class="hint">(where warm-up searches run)</span></label>
+  <select id="google-domain"></select>
+
+  <label for="decoy-queries">Decoy queries <span class="hint">(one per line; one is picked at random for each warm-up step)</span></label>
+  <textarea id="decoy-queries"></textarea>
+
+  <label>Pause before typing on each page <span class="hint">(milliseconds)</span></label>
+  <div class="row">
+    min <input id="min-pause" type="number" min="0">
+    max <input id="max-pause" type="number" min="0">
+  </div>
+
+  <label>Delay between keystrokes <span class="hint">(milliseconds)</span></label>
+  <div class="row">
+    min <input id="min-keystroke" type="number" min="0">
+    max <input id="max-keystroke" type="number" min="0">
+  </div>
+
+  <button id="save-button">Save</button>
+  <button id="reset-button">Reset to defaults</button>
+  <span id="status"></span>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>

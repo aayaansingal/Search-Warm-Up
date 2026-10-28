@@ -1,0 +1,5 @@
+# Release zips built by scripts/package-release.sh
+dist/
+
+# macOS Finder metadata
+.DS_Store

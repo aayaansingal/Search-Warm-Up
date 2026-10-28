@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "description": "Development metadata only (not part of the extension). Marks the project's .js files as ES modules so Node can run tests/background.test.mjs.",
+  "type": "module"
+}

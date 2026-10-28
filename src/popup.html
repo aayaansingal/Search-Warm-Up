@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Search Warm-Up</title>
+  <style>
+    body { font-family: system-ui, sans-serif; width: 300px; margin: 12px; }
+    form { display: flex; gap: 6px; }
+    input[type="text"] { flex: 1; padding: 6px 8px; font-size: 14px; }
+    button { padding: 6px 10px; font-size: 14px; cursor: pointer; }
+    label { display: block; margin-top: 8px; font-size: 13px; }
+    p { font-size: 12px; color: #666; margin: 8px 0 0; }
+  </style>
+</head>
+<body>
+  <form id="search-form">
+    <input id="query-input" type="text" placeholder="Search Google…" autofocus autocomplete="off">
+    <button type="submit">Go</button>
+  </form>
+  <label><input id="new-tab-checkbox" type="checkbox"> Open in new tab</label>
+  <p>Shortcut: <b>Alt+Shift+G</b> (<b>Option+Shift+G</b> on Mac) opens this box. In normal windows you can also type <b>g</b>, then a space, in the address bar. <a href="#" id="options-link">Settings</a></p>
+  <script src="popup.js"></script>
+</body>
+</html>
